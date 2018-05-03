@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>PUBGRadar/M3D4</title>
+  <title>PUBGRadar / M3D4</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/openlayers@4.6.4/dist/ol.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
@@ -34,7 +34,8 @@
   <div id="app">
     <div class="sidenav" id="navBox" style="display:none;">
       <section class="section">
-        <h1 class="title STYLE4">PUBGRadar/M3D4</h1>      
+        <h1 class="title STYLE4">PUBGRadar / M3D4</h1>
+        <h1 class="title STYLE1">大吉大利,今晚吃鸡。</h1> 
         <!-- <div class="field is-grouped">
           <a class="button is-small">Button</a>
           <a class="button is-small">Button2</a>
@@ -46,11 +47,12 @@
           <br><br>
 
         <label class="label">地图设置:</label>
-          <input type="checkbox" id="followme" v-model="followMe"><label for="followme">跟随玩家</label>
-          <input type="checkbox" id="showbox" v-model="showBox"><label for="showbox">显示盒子</label>
+          <input type="checkbox" id="followme" v-model="followMe"><label for="followme">跟随</label>
+          <input type="checkbox" id="showbox" v-model="showBox"><label for="showbox">盒子</label>
+          <input type="checkbox" id="hideallitems" v-model="hideAllItems"><label for="hideAllItems">战斗模式</label>
         <br>
-          <input type="checkbox" id="showairdrop" v-model="showAirDrop"><label for="showairdrop">显示空投</label>
-          <input type="checkbox" id="showcar" v-model="showCar"><label for="showcar">显示载具</label>
+          <input type="checkbox" id="showairdrop" v-model="showAirDrop"><label for="showairdrop">空投</label>
+          <input type="checkbox" id="showcar" v-model="showCar"><label for="showcar">载具</label>
           <br><br>
           
         <!-- <label class="label" v-on:dblclick="showNoItems">Item Options:</label> -->
@@ -106,9 +108,9 @@
 
         <hr>
         <label class="label">刷新率:</label>
-          <a class="button is-small" @click="setFPS(30)">FSP 30</a>
-          <a class="button is-small" @click="setFPS(60)">FSP 60</a>
-          <a class="button is-small" @click="setFPS(60)">FSP 60</a>
+          <a class="button is-small" @click="setFPS(30)">FPS 30</a>
+          <a class="button is-small" @click="setFPS(60)">FPS 60</a>
+          <a class="button is-small" @click="setFPS(120)">FPS 120</a>
           <br><br>
 
         <!-- <a class="button is-small" @click="toggleRefresh">{{ toggleButtonText }}</a>
